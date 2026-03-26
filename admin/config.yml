@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: suresh-kumara-gist/test97
+  base_url: https://suresh-issue-82.dcycleproject.org
+  auth_endpoint: /auth/github/repo/69c56d43d063c54f7f7be293
+media_folder: static/uploads
+public_folder: /uploads
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
